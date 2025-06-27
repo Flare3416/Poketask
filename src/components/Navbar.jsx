@@ -9,7 +9,7 @@ const Navbar = ({ currentTheme, setCurrentTheme, themes }) => {
   };
 
   return (
-    <nav className={`${themes[currentTheme].color} shadow-lg rounded-b-xl p-4 flex justify-between items-center transition-colors duration-500`}>
+    <nav className={`bg-${themes[currentTheme].bg}-500 shadow-lg rounded-b-xl p-4 flex justify-between items-center transition-colors duration-500`}>
       <div className="text-white text-xl font-bold tracking-wide ml-20">PokéTasK</div>
 
       <ul className="flex gap-6 text-white text-sm font-medium mr-20 items-center">
