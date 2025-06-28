@@ -41,7 +41,7 @@ PokéTasK is a beautifully themed, Pokémon-inspired todo app with theme switchi
 
 ## 🧩 Folder Structure
 
-<pre> Poketask/ ├── public/ │ ├── theme-1profile.png │ ├── background-1.jpg │ └── ...other theme images ├── src/ │ ├── components/ │ │ └── Navbar.jsx │ ├── App.jsx │ └── main.jsx ├── vite.config.js ├── package.json └── README.md </pre>
+<pre lang="markdown"> ``` Poketask/ ├── public/ │ ├── theme-1profile.png │ ├── background-1.jpg │ └── ...other theme images ├── src/ │ ├── components/ │ │ └── Navbar.jsx │ ├── App.jsx │ └── main.jsx ├── vite.config.js ├── package.json └── README.md ``` </pre>
 
 
 ---
