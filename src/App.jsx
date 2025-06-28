@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import Navbar from "./components/Navbar"
 
+const basePath = import.meta.env.BASE_URL;
+
 const themes = {
   fire: {
     bg: 'red',
-    icon: '/theme-1profile.png',
-    bgimg: '/background-1.jpg',
+    icon: `${basePath}theme-1profile.png`,
+    bgimg: `${basePath}background-1.jpg`,
     bgClass: 'bg-red-100',
     buttonClass: 'bg-red-500',
     buttonHoverClass: 'hover:bg-red-600',
@@ -14,8 +16,8 @@ const themes = {
   },
   water: {
     bg: 'blue',
-    icon: '/theme-2profile.png',
-    bgimg: '/background-2.jpg',
+    icon: `${basePath}theme-2profile.png`,
+    bgimg: `${basePath}background-2.jpg`,
     bgClass: 'bg-blue-100',
     buttonClass: 'bg-blue-500',
     buttonHoverClass: 'hover:bg-blue-600',
@@ -23,8 +25,8 @@ const themes = {
   },
   grass: {
     bg: 'green',
-    icon: '/theme-3profile.png',
-    bgimg: '/background-3.jpg',
+    icon: `${basePath}theme-3profile.png`,
+    bgimg: `${basePath}background-3.jpg`,
     bgClass: 'bg-green-100',
     buttonClass: 'bg-green-500',
     buttonHoverClass: 'hover:bg-green-600',
@@ -32,14 +34,14 @@ const themes = {
   },
   electric: {
     bg: 'yellow',
-    icon: '/theme-4profile.png',
-    bgimg: '/background-4.jpg',
+    icon: `${basePath}theme-4profile.png`,
+    bgimg: `${basePath}background-4.jpg`,
     bgClass: 'bg-yellow-100',
     buttonClass: 'bg-yellow-500',
     buttonHoverClass: 'hover:bg-yellow-600',
     scrollbarColor: '#eab308'
   },
-}
+};
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(() => {

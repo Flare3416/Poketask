@@ -11,6 +11,11 @@ PokéTasK is a beautifully themed, Pokémon-inspired todo app with theme switchi
 > _Above: Example of PokéTasK in "Grass" theme_
 
 ---
+## 🌈 Live Demo
+
+🔗 **Live Demo**: [https://flare3416.github.io/Poketask/](https://flare3416.github.io/Poketask/)
+
+---
 
 ## ✨ Features
 
@@ -23,11 +28,16 @@ PokéTasK is a beautifully themed, Pokémon-inspired todo app with theme switchi
 
 ---
 
-## 🌈 Live Demo
+## 🚀 Tech Stack
 
-> *Coming soon...*
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **uuid** for unique task IDs
+- **gh-pages** for deployment
 
 ---
+
 
 ## 🧩 Folder Structure
 
@@ -51,6 +61,8 @@ PokéTasK is a beautifully themed, Pokémon-inspired todo app with theme switchi
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/yourname/poketask.git
-cd poketask
+git clone https://github.com/flare3416/Poketask.git
+cd Poketask
+npm install
+npm run dev
 
