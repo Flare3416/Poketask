@@ -4,6 +4,14 @@ PokéTasK is a beautifully themed, Pokémon-inspired todo app with theme switchi
 
 ---
 
+## 🖼️ Preview
+
+![App Preview](./public/preview.jpg)
+
+> _Above: Example of PokéTasK in "Grass" theme_
+
+---
+
 ## ✨ Features
 
 - 🔁 **Persistent Tasks** with `localStorage`
