@@ -1,4 +1,4 @@
-# 🔥 PokéTasK – Pokwmon Themed Todo-List
+# 🔥 PokéTasK – Pokemon Themed Todo-List
 
 PokéTasK is a beautifully themed, Pokémon-inspired todo app with theme switching, smooth animations, and persistent storage using `localStorage`.
 
