@@ -7,12 +7,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules
-dist
+
+# Vite/Build output (keep dist when deploying)
+# Ignore dist in main, but allow in gh-pages
+dist/
+!dist/index.html
+
+# SSR & local files
 dist-ssr
 *.local
 
-# Editor directories and files
+# Editor files
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +29,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
