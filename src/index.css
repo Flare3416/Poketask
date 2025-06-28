@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 * {
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 @keyframes gradient-shift {
@@ -14,20 +14,152 @@
 
 .animate-gradient {
   animation: gradient-shift 6s ease-in-out infinite;
-  background-size: 300% 300%;
+  background-size: 300% 300%;  
 }
 
-@keyframes slow-bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: ease-in-out;
+/* Base mobile styles */
+.quest-container {
+  width: 95vw;
+  height: 85vh;
+  margin-top: 1rem;
+}
+
+.quest-title {
+  font-size: 1.5rem;
+}
+
+.todo-list-container {
+  height: 60vh;
+}
+
+/* 481px - 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .quest-container {
+    width: 85vw;
+    height: 82vh;
+    margin-top: 0.75rem;
   }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: ease-in-out;
+  
+  .quest-title {
+    font-size: 1.75rem;
+  }
+  
+  .input-container input {
+    font-size: 0.875rem;
+  }
+  
+  .todo-item {
+    padding: 0.875rem;
   }
 }
 
-.animate-slow-bounce {
-  animation: slow-bounce 2s ease-in-out infinite;
+/* 769px - 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .quest-container {
+    width: 65vw;
+    height: 80vh;
+    margin-top: 1rem;
+  }
+  
+  .quest-title {
+    font-size: 2rem;
+  }
+}
+
+/* 1025px - 1366px */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .quest-container {
+    width: 50vw;
+    height: 80vh;
+    margin-top: 1.25rem;
+  }
+  
+  .quest-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* 1367px - 1920px */
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+  .quest-container {
+    width: 40vw;
+    height: 80vh;
+    margin-top: 1.5rem;
+  }
+  
+  .quest-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* 1921px+ */
+@media screen and (min-width: 1921px) {
+  .quest-container {
+    width: 35vw;
+    max-width: 800px;
+    height: 80vh;
+    margin-top: 2rem;
+  }
+  
+  .quest-title {
+    font-size: 3rem;
+  }
+}
+
+/* Landscape mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .quest-container {
+    height: 90vh;
+    margin-top: 0.5rem;
+  }
+  
+  .quest-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .todo-list-container {
+    height: 70vh;
+  }
+}
+
+/* High DPI/Retina */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+  .quest-title {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Print */
+@media print {
+  .quest-container {
+    width: 100%;
+    height: auto;
+    background: white !important;
+    box-shadow: none !important;
+  }
+  
+  .todo-actions {
+    display: none;
+  }
+  
+  .input-container {
+    display: none;
+  }
+  
+  .quest-title {
+    color: black !important;
+    font-size: 1.5rem;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
